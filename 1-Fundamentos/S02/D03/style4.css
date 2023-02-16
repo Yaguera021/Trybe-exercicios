@@ -1,0 +1,16 @@
+ol li {
+    background: yellow;
+}
+
+ol li:nth-of-type(even){
+    color: green;
+}
+
+ol li:nth-of-type(odd){
+    text-transform: uppercase;
+}
+
+h1,h2,h3 {
+    color: red;
+   /* continuar daqui, preciso verificar como alterar as fontes de text italic */
+}
