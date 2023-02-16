@@ -26,35 +26,37 @@ li em {
 li {
     font-size: 20px;
 }
+
+
+#linguages li:not(:nth-child(n+4)) {
+    color: blue;
+}
 .corderosa {
     width: 35px;
     background-color: pink;
 }
 
-#linguagens li:not(:nth-child(n+4)) {
-    color: blue;
-}
 
 #aliados li a:hover {
     font-weight: bold;
 }
 
-#aliado li a[href*="stackoverflow"] {
+#aliados li a[href*="stackoverflow"]:hover {
     color: orange;
 }
 
-#aliado li a[href*="W3Schools"] {
-    color: green;
+#aliados li a[href*="w3schools"]:hover {
+    color: greenyellow;
 }
 
-#aliado li a[href*="MDN Web Docs"] {
-    color: orange;
+#aliados li a[href*="mozilla"]:hover {
+    color: orangered;
 }
 
-#aliado li a[href*="DevDocs"] {
-    color: grey;
+#aliados li a[href*="devdocs"]:hover {
+    color: blue;
 }
 
-#aliado li a[href*="Trybe"] {
-    color: darkgreen;
+#aliados li a[href*="trybe"]:hover {
+    color: #04AA6D;
 }
