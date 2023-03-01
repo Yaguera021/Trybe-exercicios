@@ -1,0 +1,27 @@
+let clientesTrybeBank = ['Ada', 'John', 'Gus'];
+
+function removeCliente(nomeDoCliente) {
+    let clienteEncontrado = false;
+    if (typeof nomeDoCliente === 'string') {
+        for ( let index = 0; index < clientesTrybeBank.length; index += 1) {
+            if(nomeDoCliente === clientesTrybeBank[index]) {
+                clientesTrybeBank.splice(index, 1);
+                clienteEncontrado = true;
+                return 'Cliente excluído(a) com sucesso.'
+            }
+        }
+        if (clienteEncontrado === false) {
+            return 'Cliente não encontrado(a)'
+        }
+        
+    } else {
+        
+        return 'ERRRR00-XX404 o nickname!? do cliente precisa ser uma string'
+}
+
+}
+
+
+console.log(removeCliente())
+
+
