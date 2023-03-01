@@ -1,0 +1,21 @@
+let clientesTrybeBank = ['Ada', 'John', 'Gus'];
+
+function adicionaCliente(nomeDoCliente) {
+    
+    if (typeof nomeDoCliente === 'string') {
+        
+    clientesTrybeBank.push(nomeDoCliente);
+
+    return 'Cliente adicionado(a) com sucesso!'
+        
+    } else {
+        
+        return 'ERRRR00-XX404 o nickname!? do cliente precisa ser uma string'
+}
+
+}
+
+console.log(adicionaCliente('Yago'));
+
+// 
+
