@@ -1,7 +1,7 @@
 # DOM - Eventos - Web Storage
-1 - DOM e seletores
-2 - Trabalhando com elementos
-3 - JavaScript - Eventos
-4 - JavaScript - Web Storage
-5 - Projeto - Arte com Pixels
-6 - Projeto Bônus
+1 - DOM e seletores <br>
+2 - Trabalhando com elementos <br>
+3 - JavaScript - Eventos <br>
+4 - JavaScript - Web Storage <br>
+5 - Projeto - Arte com Pixels <br>
+6 - Projeto Bônus <br>
