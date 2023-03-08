@@ -1,1 +1,8 @@
-let classes = document.getElementsByTagName(class).innerText 
+const students31 = {
+    studentsInfo: [
+        picture:
+        trybe:
+        student_name:
+        
+    ]
+}
