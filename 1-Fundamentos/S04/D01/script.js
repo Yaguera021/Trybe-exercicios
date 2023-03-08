@@ -1,0 +1,1 @@
+let classes = document.getElementsByTagName(class).innerText 
