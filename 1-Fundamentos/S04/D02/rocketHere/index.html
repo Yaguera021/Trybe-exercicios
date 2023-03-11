@@ -57,6 +57,7 @@
   </head>
   <body>
     <script>
+
       // Adicione a tag h1 com o texto TrybeTrip - Agência de Viagens como filho da tag body;
       const AddH1 = () => {
         const h1 = document.createElement('h1');
@@ -95,7 +96,16 @@
       AddImage.className = 'small-image';
       AddImage.src = 'https://picsum.photos/200';
       AddSection.appendChild(AddImage);
-      // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, … como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+
+      // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+      const CreateUl = document.createElement('ul');
+      AddSectionR.appendChild(CreateUl);
+      const CreateArray = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (let index in CreateArray) {
+        const numbersOfArray = document.createElement('li');
+        numbersOfArray.innerHTML = numbersOfArray[index];
+        CreateUl.appendChild(AddSectionR);
+      }
       // Adicione 3 tags h3, todas sendo filhas do main criado no passo 2. 
 
       // Adicione a classe title na tag h1 criada;
