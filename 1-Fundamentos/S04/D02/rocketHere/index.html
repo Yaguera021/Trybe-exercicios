@@ -47,7 +47,7 @@
         background-color: blue;
         width: 60%;
         margin-left: auto;
-        margin-right: 0;
+        margin-right: auto;
       }
 
       .main-content .description {
@@ -108,6 +108,7 @@
         numbersOfArray.innerHTML = numbersOfArray[index];
         CreateUl.appendChild(numbersOfArray);
       }
+
       // Adicione 3 tags h3, todas sendo filhas do main criado no passo 2. 
       for(let index = 1; index <= 3; index += 1) {
         const Cria3H3 = document.createElement('h3');
@@ -124,19 +125,19 @@
       for (let index = 0; index < 3; index += 1) {
         AddDescription.className = 'description';
       }
-      // Remova a section criada no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
-      const AddSectionL = document.getElementsByClassName('left-content')[0];
-      AddMain.removeChild(AddSectionL);
 
-
-
-      // Centralize a section criada no passo 6 (aquele que possui a classe right-content).
-      // De olho na dica 👀:: Para centralizar a section, basta configurar o margin-right: auto da section;
+      // Remova a section criada no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild(); ***
+      
+      // Centralize a section criada no passo 6 (aquele que possui a classe right-content). *** 
+     
 
       // Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
+     
       // Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
 
-
+      const ul = document.getElementsByTagName('ul')[0];
+      ul.lastChild.remove();
+      ul.lastChild.remove();
 
 
 
