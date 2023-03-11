@@ -84,12 +84,12 @@
       // Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
       const AddSectionL = document.createElement('section');
       AddSectionL.className = 'left-content';
-      AddMain.appendChild(AddSection2);
+      AddMain.appendChild(AddSectionL);
 
       // Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
       const AddSectionR = document.createElement('section');
       AddSectionR.className = 'right-content';
-      AddMain.appendChild(AddSectionR)
+      AddMain.appendChild(AddSectionR);
 
       // Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
       const AddImage = document.createElement('img');
@@ -100,17 +100,36 @@
       // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, como valores da lista. Essa lista deve ser filha do section criado no passo 6;
       const CreateUl = document.createElement('ul');
       AddSectionR.appendChild(CreateUl);
+
       const CreateArray = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
       for (let index in CreateArray) {
         const numbersOfArray = document.createElement('li');
         numbersOfArray.innerHTML = numbersOfArray[index];
-        CreateUl.appendChild(AddSectionR);
+        CreateUl.appendChild(numbersOfArray);
       }
       // Adicione 3 tags h3, todas sendo filhas do main criado no passo 2. 
+      for(let index = 1; index <= 3; index += 1) {
+        const Cria3H3 = document.createElement('h3');
+        Cria3H3.innerHTML = 'Tags: ' + index;
+        AddMain.appendChild(Cria3H3);
+      }
 
       // Adicione a classe title na tag h1 criada;
+      const title = document.querySelector('h1');
+      title.className = 'title';
+
       // Adicione a classe description nas 3 tags h3 criadas;
+      const AddDescription = document.getElementsByTagName('h3');
+      for (let index = 0; index < 3; index += 1) {
+        AddDescription.className = 'description';
+      }
       // Remova a section criada no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
+      const AddSectionL = document.getElementsByClassName('left-content')[0];
+      AddMain.removeChild(AddSectionL);
+
+
+
       // Centralize a section criada no passo 6 (aquele que possui a classe right-content).
       // De olho na dica 👀:: Para centralizar a section, basta configurar o margin-right: auto da section;
 
