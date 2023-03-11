@@ -60,10 +60,22 @@
       // Adicione a tag h1 com o texto TrybeTrip - Agência de Viagens como filho da tag body;
       const AddH1 = () => {
         const h1 = document.createElement('h1');
-        h1.innerText = 'TrybeTrip - Agência de Vianges';
+        h1.innerText = 'TrybeTrip - Agência de Viagens';
         document.body.appendChild(h1);
       };
       AddH1();
+
+      // Adicione a tag main com a classe main-content como filho da tag body;
+      const AddMain = document.createElement('main');
+      AddMain.className = 'main-content';
+      document.body.appendChild(main);
+
+      // Adicione a tag `section` com a classe `center-content` como filho da tag `main` criada no passo 2;
+      const AddSection = document.createElement('section');
+      AddSection.className = 'center-content';
+      main.appendChild(AddSection);
+
+
     </script>
   </body>
 </html>
